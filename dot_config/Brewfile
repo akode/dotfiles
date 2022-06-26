@@ -1,0 +1,31 @@
+tap "homebrew/cask"
+tap "buo/cask-upgrade"
+brew "mas"
+tap "homebrew/cask-fonts"
+tap "buo/cask-upgrade"
+tap "helix-editor/helix"
+
+brew "git"
+brew "awscli"
+brew "helix" # ultra fast editor for the terminal
+brew "starship"
+brew "snappy"
+brew "rustup-init"
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "jq"
+brew "pandoc"
+brew "chezmoi" # Terminal configuration management
+brew "task"
+brew "timewarrior"
+brew "pipx" 
+brew "nushell" # Data centric shell written in rust
+brew "make"
+brew "zola" # Static site generator written in rust
+brew "docker"
+cask "rancher" # Alternative to Docker Desktop
+cask "font-monoid-nerd-font"
+cask "kitty" # Cross platform terminal
+cask "visual-studio-code" # IDE
+cask "obsidian" # Notes written in Markdown
+cask "rectangle" # Move windows with keyboard shortcuts
