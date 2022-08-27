@@ -14,7 +14,13 @@ let-env PROMPT_INDICATOR = ""
 let-env PROMPT_COMMAND = {
 # jobs are not supported
 let width = (term size -c | get columns | into string)
+{{- if eq .chezmoi.os "darwin" }}
+{{- if eq .chezmoi.arch "arm64" }}
 ^/opt/homebrew/bin/starship prompt $"--cmd-duration=($env.CMD_DURATION_MS)" $"--status=($env.LAST_EXIT_CODE)" $"--terminal-width=($width)"
+{{ else }}
+^/usr/local/bin/starship prompt $"--cmd-duration=($env.CMD_DURATION_MS)" $"--status=($env.LAST_EXIT_CODE)" $"--terminal-width=($width)"
+{{- end }}
+{{- end }}
 }
                 
 # Not well-suited for `starship prompt --right`.
