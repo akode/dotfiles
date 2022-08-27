@@ -1,12 +1,12 @@
 let-env STARSHIP_SHELL = "nu"
 let-env STARSHIP_SESSION_KEY = (random chars -l 16)
-{{ if eq .chezmoi.os "darwin" }}
-{{ if eq .chezmoi.arch "arm64" }}
+{{- if eq .chezmoi.os "darwin" }}
+{{- if eq .chezmoi.arch "arm64" }}
 let-env PROMPT_MULTILINE_INDICATOR = (^/opt/homebrew/bin/starship prompt --continuation)
 {{ else }}
 let-env PROMPT_MULTILINE_INDICATOR = (^/usr/local/bin/starship prompt --continuation)
-{{ end }}
-{{ end }}
+{{- end }}
+{{- end }}
 # Does not play well with default character module.
 # TODO: Also Use starship vi mode indicators?
 let-env PROMPT_INDICATOR = ""
