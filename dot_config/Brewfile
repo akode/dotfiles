@@ -7,7 +7,7 @@ tap "helix-editor/helix"
 
 brew "git"
 brew "awscli"
-brew "helix" # ultra fast editor for the terminal
+brew "nvim"
 brew "starship"
 brew "snappy"
 brew "rustup-init"
@@ -23,7 +23,6 @@ brew "nushell" # Data centric shell written in rust
 brew "make"
 brew "zola" # Static site generator written in rust
 brew "docker"
-cask "rancher" # Alternative to Docker Desktop
 cask "font-monoid-nerd-font"
 cask "kitty" # Cross platform terminal
 cask "visual-studio-code" # IDE
