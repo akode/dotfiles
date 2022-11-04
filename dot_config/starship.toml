@@ -14,6 +14,8 @@ $python\
 [](fg:#86BBD8 bg:#33658A)\
 $time\
 [ ](fg:#33658A)\
+$line_break\
+[ ](fg:#FCA17D) 
 """
 
 # Disable the blank line at the start of the prompt
