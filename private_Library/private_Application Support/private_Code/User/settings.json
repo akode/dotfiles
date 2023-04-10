@@ -1,6 +1,0 @@
-{
-    "editor.fontFamily": "Monoid Nerd Font Mono, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.minimap.enabled": false,
-    "terminal.integrated.defaultProfile.osx": "zsh"
-}

@@ -3,7 +3,6 @@ tap "buo/cask-upgrade"
 brew "mas"
 tap "homebrew/cask-fonts"
 tap "buo/cask-upgrade"
-tap "helix-editor/helix"
 
 brew "git"
 brew "awscli"
@@ -21,10 +20,13 @@ brew "timewarrior"
 brew "pipx" 
 brew "nushell" # Data centric shell written in rust
 brew "make"
-brew "zola" # Static site generator written in rust
 brew "docker"
+brew "exa"
+brew "dust"
+brew "copier"
+brew "bat"
+cask "font-hasklug-nerd-font"
 cask "font-monoid-nerd-font"
-cask "kitty" # Cross platform terminal
 cask "visual-studio-code" # IDE
 cask "obsidian" # Notes written in Markdown
 cask "rectangle" # Move windows with keyboard shortcuts
