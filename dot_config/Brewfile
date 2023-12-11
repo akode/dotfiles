@@ -15,16 +15,15 @@ brew "pyenv-virtualenv"
 brew "jq"
 brew "pandoc"
 brew "chezmoi" # Terminal configuration management
-brew "task"
-brew "timewarrior"
 brew "pipx" 
 brew "nushell" # Data centric shell written in rust
 brew "make"
 brew "docker"
-brew "exa"
+brew "eza"
 brew "dust"
 brew "copier"
 brew "bat"
+cask "tabby"
 cask "font-hasklug-nerd-font"
 cask "font-monoid-nerd-font"
 cask "visual-studio-code" # IDE
