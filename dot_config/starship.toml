@@ -1,35 +1,50 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = 'onehalf_dark'
+
+
 format = """
-[](#9A348E)\
+[](c_user)\
 $username\
-[](bg:#DA627D fg:#9A348E)\
+[](fg:c_user bg:c_shell)\
 $shell\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
+[](fg:c_shell bg:c_git)\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#86BBD8)\
+[](fg:c_git bg:c_lang)\
 $nodejs\
 $rust\
 $python\
-[](fg:#86BBD8 bg:#33658A)\
-$time\
-[ ](fg:#33658A)\
+[](fg:c_lang)\
 $line_break\
-[ ](fg:#FCA17D) 
+[ ](fg:#bfceff) 
 """
 
 # Disable the blank line at the start of the prompt
-# add_newline = false
+add_newline = false
+
+[palettes.onehalf_dark]
+c_red = '#e45649'
+c_lang = '#50a14f'
+c_shell = '#c18401'
+c_user = '#0184bc'
+c_purple = '#a626a4'
+c_git = '#0997b3'
+c_fg = '#383a42'
+c_bg = '#fafafa'
+c_comment = '#a0a1a7'
+c_selection = '#bfceff'
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
+style_user = "bg:c_user"
+style_root = "bg:c_user"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#DA627D"
+style = "bg:c_shell"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -49,26 +64,26 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:#FCA17D"
-format = '[[ $symbol $branch ](bg:#FCA17D)]($style)'
+style = "bg:c_git"
+format = '[[ $symbol $branch ](bg:c_git)]($style)'
 
 [git_status]
-style = "bg:#FCA17D"
-format = '[[($all_status$ahead_behind )](bg:#FCA17D)]($style)'
+style = "bg:c_git"
+format = '[[($all_status$ahead_behind )](bg:c_git)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#86BBD8"
-format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+style = "bg:c_lang"
+format = '[[ $symbol ($version) ](bg:c_lang)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#86BBD8"
-format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+style = "bg:c_lang"
+format = '[[ $symbol ($version) ](bg:c_lang)]($style)'
 
 [python]
-style = "bg:#86BBD8"
-format = '[[ $symbol ($version)](bg:#86BBD8)]($style)'
+style = "bg:c_lang"
+format = '[[ $symbol ($version)](bg:c_lang)]($style)'
 
 [time]
 disabled = false
@@ -78,4 +93,4 @@ format = '[[ ♥ $time ](bg:#33658A)]($style)'
 
 [shell]
 disabled = false
-format = "[$indicator](bg:#DA627D)"
+format = "[$indicator](bg:c_shell)"
