@@ -11,7 +11,6 @@ brew "starship"
 brew "snappy"
 brew "rustup-init"
 brew "pyenv"
-brew "pyenv-virtualenv"
 brew "jq"
 brew "pandoc"
 brew "chezmoi" # Terminal configuration management
@@ -23,7 +22,13 @@ brew "eza"
 brew "dust"
 brew "copier"
 brew "bat"
+brew "gitlab-runner"
+brew "ripgrep"
+brew "lightgbm" # Gradient boosting decision trees
+brew "fasttext" # NLP
 cask "tabby"
+cask "font-xkcd"
+cask "font-xkcd-script"
 cask "font-hasklug-nerd-font"
 cask "font-monoid-nerd-font"
 cask "visual-studio-code" # IDE
