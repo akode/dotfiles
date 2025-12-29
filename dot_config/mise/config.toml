@@ -1,3 +1,6 @@
 [tools]
 "pipx:git+https://github.com/github/spec-kit.git" = "latest"
 uv = "latest"
+eza = "latest"
+delta = "latest"
+atuin = "latest"
