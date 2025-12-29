@@ -2,9 +2,9 @@
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 alias ls="eza -la"
+alias c="chezmoi"
 eval "$(starship init zsh)"
 
-# Created by `pipx` on 2024-05-02 11:37:51
 export PATH="$PATH:/Users/akode/.local/bin"
 export XDG_CONFIG_HOME="$HOME/.config/"
 export PATH="$HOME/go/bin:$GOPATH/bin:$PATH"
@@ -14,8 +14,8 @@ export PATH='/Users/akode/.duckdb/cli/latest':$PATH
 autoload -Uz compinit && compinit
 
 . "$HOME/.atuin/bin/env"
-
 eval "$(atuin init zsh)"
+
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/akode/.docker/completions $fpath)
 autoload -Uz compinit
