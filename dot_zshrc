@@ -8,11 +8,11 @@ eval "$(~/.local/bin/mise activate zsh)"
 alias ls="eza -la"
 alias c="chezmoi"
 
-export PATH="$PATH:/Users/akode/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export XDG_CONFIG_HOME="$HOME/.config/"
 export PATH="$HOME/go/bin:$GOPATH/bin:$PATH"
 export GPG_TTY=$(tty)
-export PATH='/Users/akode/.duckdb/cli/latest':$PATH
+export PATH='$HOME/.duckdb/cli/latest':$PATH
 
 autoload -Uz compinit && compinit
 
