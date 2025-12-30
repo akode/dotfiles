@@ -12,6 +12,7 @@ fi
 
 if ! command -v chezmoi >/dev/null; then
   sh -c "$(curl -fsLs get.chezmoi.io)" -- init --apply akode
+  chezmoi apply
 fi
 
 if [ ! -d "$HOME/.zsh" ]; then
