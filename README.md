@@ -14,3 +14,4 @@ curl https://mise.run/zsh | sh
 
 - [Chezmoi](https://www.chezmoi.io/)
 - [Mise](https://mise.jdx.dev/)
+- [DevPod](https://devpod.sh/docs/what-is-devpod)
