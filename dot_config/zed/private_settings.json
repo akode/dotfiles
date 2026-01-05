@@ -12,20 +12,20 @@
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null,
-      "enterprise_uri": null
+      "enterprise_uri": null,
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
   "vim_mode": false,
   "ssh_connections": [],
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
-    }
+      "model": "claude-3-5-sonnet-latest",
+    },
   },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "zed",
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
@@ -33,6 +33,17 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato (blue)"
-  }
+    "dark": "Catppuccin Macchiato (blue)",
+  },
+  "languages": {
+    "Python": {
+      "language_servers": [
+        // Disable basedpyright and enable ty, and otherwise
+        // use the default configuration.
+        "ty",
+        "!basedpyright",
+        "...",
+      ],
+    },
+  },
 }
