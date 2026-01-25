@@ -6,3 +6,7 @@ delta = "latest"
 atuin = "latest"
 starship = "latest"
 "cargo:https://github.com/Feel-ix-343/markdown-oxide.git" = "latest"
+[tools."github:ryanoasis/nerd-fonts"]
+asset_pattern = "FiraCode.tar.xz"
+version = "latest"
+bin_path = "~/Library/Fonts"

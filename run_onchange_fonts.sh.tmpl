@@ -1,0 +1,5 @@
+#!/bin/bash
+{{ if eq .chezmoi.os "darwin" -}}
+curl -s -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/VictorMono.tar.xz | tar xvf - -C ~/Library/Fonts/
+curl -s -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FiraCode.tar.xz | tar xvf - -C ~/Library/Fonts/
+{{ end -}}
